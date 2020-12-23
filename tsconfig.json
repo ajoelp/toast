@@ -1,0 +1,27 @@
+{
+  "include": ["src", "types", "stories", "__tests__/setupTests.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+  },
+  "exclude": ["node_modules", "dist", "**/*.spec.tsx?"]
+}

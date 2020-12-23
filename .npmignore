@@ -1,0 +1,8 @@
+coverage
+fixtures
+src
+.*
+*.log
+docs/
+jest.config.js
+__tests__
