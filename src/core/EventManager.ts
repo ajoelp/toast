@@ -1,5 +1,3 @@
-import { clearConfigCache } from 'prettier';
-
 export enum Event {
   Show = 'show',
   Clear = 'clear',
