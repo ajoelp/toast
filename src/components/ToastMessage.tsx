@@ -12,7 +12,7 @@ export interface ToastMessageProps {
 export function ToastMessage(props: ToastMessageProps) {
   const { close, active, message, options } = props;
   return (
-    <ToastMessageWrapper active={active} type={options.type}>
+    <ToastMessageWrapper data-testid={`message-${options.id}`} active={active} type={options.type}>
       <p>{message}</p>
       <button onClick={close}>x</button>
     </ToastMessageWrapper>

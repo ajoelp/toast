@@ -23,12 +23,7 @@ export function ToastWrapper(props: ToastWrapperProps) {
   return (
     <ToastContainer {...{ position }}>
       {messages.map((message) => (
-        <ToastMessageComponent
-          key={message.options.id}
-          data-testid={`message-${message.options.id}`}
-          close={closeMessage(message.options.id)}
-          {...message}
-        />
+        <ToastMessageComponent key={message.options.id} close={closeMessage(message.options.id)} {...message} />
       ))}
     </ToastContainer>
   );
