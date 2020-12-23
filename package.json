@@ -1,6 +1,6 @@
 {
   "name": "@ajoelp/toast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A headless dialog/modal manager for react.",
   "source": "src/index.ts",
   "typings": "dist/index.d.ts",
