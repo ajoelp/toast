@@ -1,4 +1,6 @@
 # React Toast Notifications
+![npm](https://img.shields.io/npm/v/@ajoelp/toast)
+![Test](https://github.com/ajoelp/toast/workflows/Test/badge.svg?branch=main)
 
 ## Getting Started
 
