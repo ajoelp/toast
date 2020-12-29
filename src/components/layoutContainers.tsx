@@ -9,6 +9,7 @@ type ToastContainerProps = {
 
 export const ToastContainer = styled.div<ToastContainerProps>`
   position: fixed;
+  z-index: 100;
   ${({ position = 'top-right' }) => {
     const [vertical, horizontal] = position.split('-');
     return {

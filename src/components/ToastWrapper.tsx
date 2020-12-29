@@ -8,10 +8,16 @@ export type ToastWrapperProps = {
   defaultDelay?: number | null;
   position?: Position;
   toastContainer?: (props: ToastMessageProps) => JSX.Element;
+  className?: string;
 };
 
 export function ToastWrapper(props: ToastWrapperProps) {
-  const { defaultDelay = 2500, position = 'top-right', toastContainer: ToastMessageComponent = ToastMessage } = props;
+  const {
+    defaultDelay = 2500,
+    position = 'top-right',
+    toastContainer: ToastMessageComponent = ToastMessage,
+    className,
+  } = props;
   const messages = useToastMessages({ defaultDelay });
 
   if (messages.length <= 0) return null;
@@ -21,7 +27,7 @@ export function ToastWrapper(props: ToastWrapperProps) {
   };
 
   return (
-    <ToastContainer {...{ position }}>
+    <ToastContainer {...{ className, position }}>
       {messages.map((message) => (
         <ToastMessageComponent key={message.options.id} close={closeMessage(message.options.id)} {...message} />
       ))}
