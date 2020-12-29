@@ -1,5 +1,6 @@
+import { EventManager, Event } from '@src/core/EventManager';
+import { ToastOptionsWithId } from '@src/core/toast';
 import { useCallback, useEffect, useState } from 'react';
-import { EventManager, ToastOptionsWithId, Event } from '..';
 
 export type ToastMessage = {
   message: string;

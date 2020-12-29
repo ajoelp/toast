@@ -1,6 +1,6 @@
 coverage
 fixtures
-src
+src/
 .*
 *.log
 docs/

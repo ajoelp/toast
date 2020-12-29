@@ -1,7 +1,7 @@
 {
   "name": "@ajoelp/toast",
   "version": "1.0.3",
-  "description": "A headless dialog/modal manager for react.",
+  "description": "Customizable toast notifications for react",
   "source": "src/index.ts",
   "typings": "dist/index.d.ts",
   "main": "dist/toast.js",
@@ -18,12 +18,19 @@
     "test": "jest",
     "lint": "eslint '{src,stories}/**/*.{js,ts,tsx}'",
     "lint:fix": "eslint '{src,stories}**/*.{js,ts,tsx}' --quiet --fix",
-    "build": "microbundle -o dist/ --name DialogManager --jsx React.createElement --compress false --sourcemap false",
+    "build": "microbundle --sourcemap false --jsx React.createElement",
     "storybook": "start-storybook -p 6066",
     "build-storybook": "build-storybook"
   },
-  "author": "Joel Podrebarac",
-  "license": "ISC",
+  "author": "Joel Podrebarac <joelpodrebar@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajoelp/toast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ajoelp/toast/issues"
+  },
   "peerDependencies": {
     "react": "^17.0.1"
   },
