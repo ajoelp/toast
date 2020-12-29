@@ -1,6 +1,6 @@
 {
   "name": "@ajoelp/toast",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Customizable toast notifications for react",
   "source": "src/index.ts",
   "typings": "dist/index.d.ts",
