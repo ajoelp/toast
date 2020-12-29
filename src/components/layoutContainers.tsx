@@ -1,24 +1,5 @@
 import { ToastTypes } from '../core';
 import styled, { css } from 'styled-components';
-
-export type Position = 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
-
-type ToastContainerProps = {
-  position: Position;
-};
-
-export const ToastContainer = styled.div<ToastContainerProps>`
-  position: fixed;
-  z-index: 100;
-  ${({ position = 'top-right' }) => {
-    const [vertical, horizontal] = position.split('-');
-    return {
-      [vertical]: 0,
-      [horizontal]: 0,
-    };
-  }}
-`;
-
 interface ToastMessageWrapperProps {
   active: Boolean;
   type?: ToastTypes;
